@@ -16,7 +16,7 @@ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-bu
 
 /home/vagrant/.rbenv/bin/rbenv install $VERSION
 
-/home/vagrant/.rbenv/bin/rbenv local VERSION
+/home/vagrant/.rbenv/bin/rbenv local $VERSION
 
 gem install bundler --no-ri --no-rdoc
 
