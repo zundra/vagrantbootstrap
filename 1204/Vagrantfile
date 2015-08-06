@@ -7,8 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "hashicorp/precise64"
 
-  config.vm.provision :inline, "sudo apt-get update"
-  config.vm.provision :inline, "apt-get install -y build-essential git vim libxml2 libxml2-dev"
+  config.vm.provision "shell", inline: "sudo apt-get update; apt-get install -y build-essential git vim libxml2 libxml2-dev libffi-dev"
 
   config.vm.define :server do |server|
     server.vm.hostname = "devbox"

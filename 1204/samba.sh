@@ -5,7 +5,7 @@ echo "======================= Installing Samba ==========================="
 echo "===================================================================="
 
 sudo apt-get install -y samba
-sudo cp config/samba.cfg /etc/samba/smb.conf
+sudo cp config/smb.conf /etc/samba/smb.conf
 mkdir -p /home/vagrant/code
 chmod 0777 -R /home/vagrant/code 
 sudo service sbmd restart
